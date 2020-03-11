@@ -103,6 +103,10 @@ header nav a:hover {
     border-bottom: none
 }
 
+aside h1 {
+    text-align: center;
+}
+
 aside {
     background: #4682B4;
     padding: 20px;
