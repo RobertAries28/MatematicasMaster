@@ -145,7 +145,7 @@ footer .social a {
     }
     .informacion article {
         width: 90%;
-        flex-grow: 1;
+        padding: 100px;
     }
 }
 
@@ -156,5 +156,9 @@ footer .social a {
     }
     aside {
         width: 100%;
+    }
+    .informacion {
+        width: 100%;
+        border: 5px solid red;
     }
 }
