@@ -82,7 +82,6 @@ header nav a:hover {
 
 .informacion article {
     padding: 20px;
-    text-align: center;
 }
 
 aside {
@@ -157,8 +156,5 @@ footer .social a {
     }
     aside {
         width: 100%;
-    }
-    .informacion {
-        width: 1200px;
     }
 }
