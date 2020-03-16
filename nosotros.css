@@ -68,7 +68,7 @@ header nav a:hover {
     width: 100%;
 }
 
-.informacion {
+.articulo {
     max-width: 38%;
     font-family: 'Kanit', sans-serif;
     border: 3px solid #577EEC;
@@ -76,11 +76,11 @@ header nav a:hover {
     margin: 1%;
 }
 
-.informacion h2 {
+.articulo h2 {
     font-size: 30px;
 }
 
-.informacion article {
+.articulo article {
     padding: 20px;
 }
 
@@ -133,6 +133,9 @@ footer .social a {
 }
 
 @media screen and (max-width:800px) {
+    .contenedor {
+        flex-direction: column;
+    }
     header {
         flex-direction: column;
         padding: 0px;
@@ -143,22 +146,10 @@ footer .social a {
     header nav {
         width: 100%;
     }
-    .informacion article {
-        width: 90%;
-        padding: 100px;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .contenedor {
-        display: flex;
-        flex-direction: column;
+    .articulo {
+        max-width: 100%;
     }
     aside {
         width: 100%;
-    }
-    .informacion {
-        width: 100%;
-        border: 5px solid red;
     }
 }
