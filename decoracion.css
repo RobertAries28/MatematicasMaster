@@ -173,6 +173,10 @@ footer .social a {
     display: inline-block;
 }
 
+footer .social a:hover {
+    background: #c0392b;
+}
+
 @media screen and (max-width:800px) {
     .contenedor {
         flex-direction: column;
