@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contacto.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
     <title>Contacto</title>
 </head>
 
@@ -31,13 +33,14 @@
         </div>
 
         <section class="formulario">
-            <form>
+            <form action="" id="formulario" name="formulario" method="get">
                 <div>
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellidos">
-                    <input type="email" placeholder="Email">
-                    <textarea placeholder="Mensaje"></textarea>
-                    <center><input class="boton" type="submit" value="Enviar"></center>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="required" title="Obligatorio">
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="required" title="Obligatorio">
+                    <input type="email" id="correo" name="correo" placeholder="Email" class="required" title="Obligatorio">
+                    <textarea id="mensaje" placeholder="Mensaje" class="required" title="Obligatorio"></textarea>
+
+                    <center><input class="boton" id="btn" type="submit" value="Enviar"></center>
                 </div>
             </form>
         </section>
@@ -62,6 +65,12 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        $(document).ready(function() {
+                    $("#formulario").validate();
+                }
+    </script>
 </body>
 
 </html>
