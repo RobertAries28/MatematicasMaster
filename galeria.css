@@ -171,4 +171,14 @@ footer .social a:hover {
     header nav {
         width: 100%;
     }
+    footer {
+        flex-direction: column;
+    }
+    footer .social {
+        margin: auto;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+    }
 }
