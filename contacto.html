@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contacto.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="jquery.js"></script>
+
     <title>Contacto</title>
 </head>
 
@@ -33,12 +32,12 @@
         </div>
 
         <section class="formulario">
-            <form action="" id="formulario" name="formulario" method="post">
+            <form action="enviar.php" id="formulario" name="formulario" method="post">
                 <div>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="required" title="Obligatorio">
-                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="required" title="Obligatorio">
-                    <input type="email" id="correo" name="correo" placeholder="Email" class="required" title="Obligatorio">
-                    <textarea id="mensaje" name="mensaje" placeholder="mensaje" class="required" title="Obligatorio"></textarea>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                    <input type="email" id="correo" name="correo" placeholder="Email" required>
+                    <textarea id="mensaje" name="mensaje" placeholder="mensaje" required></textarea>
 
                     <center><input class="boton" name="enviar" id="btn" type="submit" value="Enviar"></center>
                 </div>
@@ -66,11 +65,6 @@
         </footer>
     </div>
 
-    <script>
-        $(document).ready(function() {
-            $("#formulario").validate();
-        })
-    </script>
 
 
 </body>
