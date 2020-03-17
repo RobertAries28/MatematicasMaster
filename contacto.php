@@ -33,14 +33,14 @@
         </div>
 
         <section class="formulario">
-            <form action="" id="formulario" name="formulario" method="get">
+            <form action="" id="formulario" name="formulario" method="post">
                 <div>
                     <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="required" title="Obligatorio">
                     <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="required" title="Obligatorio">
                     <input type="email" id="correo" name="correo" placeholder="Email" class="required" title="Obligatorio">
-                    <textarea id="mensaje" placeholder="Mensaje" class="required" title="Obligatorio"></textarea>
+                    <textarea id="mensaje" name="mensaje" placeholder="mensaje" class="required" title="Obligatorio"></textarea>
 
-                    <center><input class="boton" id="btn" type="submit" value="Enviar"></center>
+                    <center><input class="boton" name="enviar" id="btn" type="submit" value="Enviar"></center>
                 </div>
             </form>
         </section>
@@ -56,7 +56,7 @@
                 <a href="index.html">Inicio</a>
                 <a href="nosotros.html">Nosotros</a>
                 <a href="galeria.html">Galeria</a>
-                <a href="contacto.html">Contacto</a>
+                <a href="contacto.php">Contacto</a>
             </section>
 
             <div class="social">
@@ -71,6 +71,10 @@
                     $("#formulario").validate();
                 }
     </script>
+
+    <?php
+    include("correo.php");
+    ?>
 </body>
 
 </html>
