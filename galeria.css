@@ -65,13 +65,19 @@ header nav a:hover {
     background: #e74c3c;
 }
 
+.lemas {
+    text-align: center;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkcyan
+}
+
 
 /*slider*/
 
 .main {
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 50px;
     width: 80%;
 }
 
