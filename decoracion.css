@@ -120,8 +120,8 @@ aside {
 aside .widget {
     background: #F0FFF0;
     margin: 10px;
-    height: 150px;
-    width: 95%;
+    height: 160px;
+    width: 100%;
 }
 
 aside .imagen1 {
@@ -235,7 +235,6 @@ footer .social a:hover {
 
 .slider img {
     width: 100%;
-    
 }
 
 @keyframes cambio {

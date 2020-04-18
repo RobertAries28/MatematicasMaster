@@ -68,51 +68,60 @@ header nav a:hover {
 /*slider*/
 
 .main {
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
 }
 
-.slides {
+.slider {
     width: 100%;
-}
-
-.slides img {
-    width: 100%;
-}
-
-.slidesjs-pagination {
-    background: #424242;
-    list-style: none;
+    margin: auto;
     overflow: hidden;
 }
 
-.slidesjs-pagination li {
-    float: left;
+.slider ul {
+    padding: 0px;
+    width: 400%;
+    display: flex;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in;
 }
 
-.slidesjs-pagination a {
-    display: block;
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
+.slider li {
+    width: 100%;
+    list-style: none;
 }
 
-.slidesjs-pagination a:hover {
-    background: #000;
+.slider img {
+    width: 100%;
 }
 
-.slides .active {
-    background: #000;
-}
-
-.slidesjs-navigation {
-    background: #000;
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 11px 20px;
-    float: right;
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
 }
 
 footer {
