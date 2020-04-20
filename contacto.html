@@ -31,12 +31,7 @@
 
         }
 
-        function pregunta() {
-            if (confirm('¿Estas seguro de enviar este formulario?')) {
-                document.tuformulario.submit();
-            }
-        }
-
+     
 
         window.addEventListener("load", comenzar, false);
     </script>
@@ -71,7 +66,7 @@
                     <input type="text" id="correo" name="correo" placeholder="Email" required>
                     <textarea id="mensaje" name="mensaje" placeholder="mensaje" required></textarea>
 
-                    <center><input onclick="pregunta()" class="boton" name="enviar" id="Enviar" type="submit" value="Enviar"></center>
+                    <center><input  class="boton" name="enviar" id="Enviar" type="submit" value="Enviar"></center>
                 </div>
             </form>
         </section>
